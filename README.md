@@ -48,47 +48,51 @@ HackerRank-Orchestrate/
 ├── support_tickets/         # Input CSVs and agent outputs
 ├── .gitignore               # Git ignore rules
 └── requirements.txt         # Python dependencies
+```
+## ⚙️ Setup & Installation
 
-⚙️ Setup & Installation
-
-1. Clone the Repository
-Bash
-git clone [https://github.com/sairamkollur/HackerRank-Orchestrate.git](https://github.com/sairamkollur/HackerRank-Orchestrate.git)
+* **1. Clone the Repository:**
+```git clone [https://github.com/sairamkollur/HackerRank-Orchestrate.git](https://github.com/sairamkollur/HackerRank-Orchestrate.git)
 cd HackerRank-Orchestrate
-
-2. Install Dependencies
-Bash
+```
+* **2. Install Dependencies:**
+```
 pip install -r requirements.txt
+```
 
-3. Environment Variables
-Create a .env file in the root directory of the project and add your OpenRouter API key:
+* **3. Environment Variables**
+Create a `.env` file in the root directory of the project and add your OpenRouter API key:
 
-Code snippet
-OPENROUTER_API_KEY=your_openrouter_api_key_here
-(Optional) To rebuild the vector database from scratch using the markdown files in the data/ folder, run:
-
-Bash
+* **Code snippet:**
+```
+OPENROUTER_API_KEY="your_openrouter_api_key_here"
+```
+(Optional) To rebuild the vector database from scratch using the markdown files in the `data/` folder, run:
+```
 python code/build_db.py
-🚀 Usage
+```
+
+## 🚀 Usage
 Run the main application file from your terminal:
 
-Bash
+```
 python code/main.py
+```
 Upon launching, you will be greeted by the Triage OS Menu with three options:
 
-[1] Process CSV (Batch Mode)
-Reads support_tickets/support_tickets.csv.
+* **[1] Process CSV (Batch Mode)**
+Reads `support_tickets/support_tickets.csv.`
 
 Processes all tickets sequentially, utilizing the semantic cache for duplicate issues.
 
 Saves the cleanly formatted results to support_tickets/output.csv.
 
-[2] Interactive Chat (Live Mode)
+* **[2] Interactive Chat (Live Mode)**
 An interactive terminal loop where you can manually type a Company, Subject, and Issue.
 
 Watch the RAG retrieval and LLM triage happen in real-time.
 
-[3] Exit
+* **[3] Exit**
 Closes the application safely.
 
 Built for the HackerRank Orchestrate Hackathon
