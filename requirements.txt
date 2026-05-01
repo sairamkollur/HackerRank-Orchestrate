@@ -1,0 +1,6 @@
+pandas
+chromadb
+openai
+python-dotenv
+sentence-transformers
+colorama
