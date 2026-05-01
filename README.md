@@ -52,7 +52,8 @@ HackerRank-Orchestrate/
 ## ⚙️ Setup & Installation
 
 * **1. Clone the Repository:**
-```git clone [https://github.com/sairamkollur/HackerRank-Orchestrate.git](https://github.com/sairamkollur/HackerRank-Orchestrate.git)
+```bash
+git clone https://github.com/sairamkollur/HackerRank-Orchestrate.git
 cd HackerRank-Orchestrate
 ```
 * **2. Install Dependencies:**
